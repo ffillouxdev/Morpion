@@ -18,6 +18,7 @@ class Fenetre (tk.Tk):
         self.geometry("500x680") #taille de la fenêtre
         self.resizable(False, False) #empeche le redimensionnement de la fenêtre
         self.config(bg="Orange") #couleur de fond de la fenêtre
+        
 
         #creation d'un label pour le titre
         Label(self, text="Bienvenue dans le Morpion", font=("Helvetica", 16), bg="#022e75", fg="white").pack(pady=10) #titre de la fenêtre
@@ -245,7 +246,6 @@ class Fenetre (tk.Tk):
             self.changerJoueur()
             self.verifierGagner()
             
-        
     '''
     methode qui permet de changer le tour du joueur
     '''
